@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spinner默认样式" />
+
+    <Spinner
+        android:id="@+id/spinner_default"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:dropDownWidth="200dp"
+        android:entries="@array/languages"
+        android:gravity="bottom|center"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="spinner样式1" />
+
+    <Spinner
+        android:id="@+id/spinner_style1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:dropDownWidth="200dp"
+        android:gravity="bottom|center"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="使用popWindow实现Spinner" />
+
+    <TextView
+        android:id="@+id/text_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:background="@drawable/shape_help_category_tv_bg"
+        android:gravity="center"
+        android:paddingRight="8dp"
+        android:text="语言"
+        android:textSize="16sp" />
+
+</LinearLayout>
